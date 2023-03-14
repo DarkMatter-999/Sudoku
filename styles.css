@@ -5,12 +5,13 @@ body {
 #error {
     color: rgb(255, 51, 0);
     font-size: 30px;
+    margin: 10px;
 }
 
 #board {
     height: 450px;
     width: 450px;
-    background-color: gray;
+    background-color: white;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -19,7 +20,7 @@ body {
 #digits {
     width: 450px;
     height: 50px;
-    background-color: gray;
+    background-color: white;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -29,7 +30,26 @@ body {
     width: 48px;
     height: 48px;
     border: 1px black solid;
-    background-color: darkgray;
+    background-color: rgb(255, 255, 255);
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 20px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.tileStart {
+    background-color: rgb(235, 235, 235);
+}
+
+.number {
+    width: 44px;
+    height: 44px;
+    border: 1px black solid;
+    margin: 2px;
+    background-color: white;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -40,18 +60,6 @@ body {
     cursor: pointer;
 }
 
-.number {
-    width: 44px;
-    height: 44px;
-    border: 1px black solid;
-    margin: 2px;
-    background-color: darkgray;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 20px;
-    font-weight: bold;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
+.numberselected {
+    background-color: rgb(206, 206, 206);
 }
