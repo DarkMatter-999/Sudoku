@@ -1,0 +1,26 @@
+body {
+    text-align: center;
+}
+
+#error {
+    color: rgb(255, 51, 0);
+    font-size: 30px;
+}
+
+#board {
+    height: 450px;
+    width: 450px;
+    background-color: gray;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#digits {
+    width: 450px;
+    height: 50px;
+    background-color: gray;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
