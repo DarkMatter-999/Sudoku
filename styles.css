@@ -1,5 +1,8 @@
 body {
     text-align: center;
+    font-family: "Playful", sans-serif;
+    font-weight: bold;
+    background-color: rgb(179, 219, 255);
 }
 
 #error {
@@ -11,7 +14,6 @@ body {
 #board {
     height: 450px;
     width: 450px;
-    background-color: white;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -20,7 +22,7 @@ body {
 #digits {
     width: 450px;
     height: 50px;
-    background-color: white;
+    /* background-color: white; */
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -29,7 +31,7 @@ body {
 .tile {
     width: 48px;
     height: 48px;
-    border: 1px black solid;
+    border: 1px rgb(47, 141, 158) solid;
     background-color: rgb(255, 255, 255);
     margin: 0 auto;
     display: flex;
@@ -41,7 +43,7 @@ body {
     cursor: pointer;
 }
 .tileStart {
-    background-color: rgb(235, 235, 235);
+    background-color: rgb(206, 233, 255);
 }
 
 .number {
@@ -60,6 +62,18 @@ body {
     cursor: pointer;
 }
 
+.number:hover {
+    background-color: rgb(164, 196, 255);
+}
+
 .numberselected {
-    background-color: rgb(206, 206, 206);
+    background-color: rgb(182, 208, 255);
+}
+
+.horizontal-line {
+    border-bottom: 1px solid black;
+}
+
+.vertical-line {
+    border-right: 1px solid black;
 }

@@ -54,6 +54,13 @@ const setGame = () => {
                 tile.classList.add("tileStart");
             }
 
+            if (r == 2 || r == 5) {
+                tile.classList.add("horizontal-line");
+            }
+            if (c == 2 || c == 5) {
+                tile.classList.add("vertical-line");
+            }
+
             tile.classList.add("tile");
             tile.addEventListener("click", () => {
                 selectTile(tile);
@@ -61,6 +68,18 @@ const setGame = () => {
             gameboard.append(tile);
         }
     }
+
+    let arr = [];
+    for (let r = 0; r < 9; r++) {
+        let arr2 = [];
+        for (let c = 0; c < 9; c++) {
+            arr2.push(0);
+        }
+        arr.push(arr2);
+    }
+    // fillPuzzle(arr);
+
+    console.log(arr);
 };
 
 const selectNumber = (num) => {
